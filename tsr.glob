@@ -1,0 +1,174 @@
+DIGEST a917bb4a5ebc75a242c24728637c4a37
+Ftsr
+R80:97 Coq.Strings.String <> <> lib
+R115:131 Coq.ZArith.ZArith <> <> lib
+ind 207:212 <> Belief
+constr 229:236 <> Positive
+constr 294:301 <> Negative
+constr 359:365 <> Neutral
+R241:244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R240:240 Coq.Numbers.BinNums <> Z ind
+R245:250 tsr <> Belief:1 ind
+R306:309 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R305:305 Coq.Numbers.BinNums <> Z ind
+R310:315 tsr <> Belief:1 ind
+R369:374 tsr <> Belief:1 ind
+scheme 207:212 <> Belief_rect
+scheme 207:212 <> Belief_ind
+scheme 207:212 <> Belief_rec
+scheme 207:212 <> Belief_sind
+ind 388:394 <> Emotion
+constr 410:412 <> Joy
+constr 433:436 <> Fear
+constr 457:471 <> Neutral_emotion
+R417:420 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R416:416 Coq.Numbers.BinNums <> Z ind
+R421:427 tsr <> Emotion:3 ind
+R441:444 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R440:440 Coq.Numbers.BinNums <> Z ind
+R445:451 tsr <> Emotion:3 ind
+R475:481 tsr <> Emotion:3 ind
+scheme 388:394 <> Emotion_rect
+scheme 388:394 <> Emotion_ind
+scheme 388:394 <> Emotion_rec
+scheme 388:394 <> Emotion_sind
+ind 495:498 <> Data
+constr 514:527 <> External_event
+constr 550:558 <> Potential
+R537:540 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R531:536 Coq.Strings.String <> string ind
+R541:544 tsr <> Data:5 ind
+R568:571 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R562:567 Coq.Strings.String <> string ind
+R573:576 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R572:572 Coq.Numbers.BinNums <> Z ind
+R577:580 tsr <> Data:5 ind
+scheme 495:498 <> Data_rect
+scheme 495:498 <> Data_ind
+scheme 495:498 <> Data_rec
+scheme 495:498 <> Data_sind
+ind 594:599 <> Result
+constr 615:624 <> Manifested
+constr 647:658 <> Filtered_out
+constr 681:685 <> Error
+R632:635 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R628:631 tsr <> Data ind
+R636:641 tsr <> Result:7 ind
+R666:669 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R662:665 tsr <> Data ind
+R670:675 tsr <> Result:7 ind
+R695:698 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R689:694 Coq.Strings.String <> string ind
+R699:704 tsr <> Result:7 ind
+scheme 594:599 <> Result_rect
+scheme 594:599 <> Result_ind
+scheme 594:599 <> Result_rec
+scheme 594:599 <> Result_sind
+def 832:847 <> resistance_level
+R854:859 tsr <> Belief ind
+binder 850:850 <> b:9
+R867:873 tsr <> Emotion ind
+binder 863:863 <> e:10
+R878:878 Coq.Numbers.BinNums <> Z ind
+R894:894 tsr <> e:10 var
+R891:891 tsr <> b:9 var
+R905:912 tsr <> Positive constr
+R924:926 tsr <> Joy constr
+R1012:1019 tsr <> Negative constr
+R1031:1034 tsr <> Fear constr
+R1056:1060 Coq.ZArith.BinInt Z min def
+R1087:1089 Coq.ZArith.BinInt <> ::Z_scope:x_'/'_x not
+R1075:1077 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+def 1228:1241 <> execute_filter
+R1248:1253 tsr <> Belief ind
+binder 1244:1244 <> b:13
+R1261:1267 tsr <> Emotion ind
+binder 1257:1257 <> e:14
+R1275:1278 tsr <> Data ind
+binder 1271:1271 <> d:15
+R1283:1288 tsr <> Result ind
+R1304:1319 tsr <> resistance_level def
+R1321:1321 tsr <> b:13 var
+R1323:1323 tsr <> e:14 var
+binder 1299:1299 <> r:16
+R1336:1336 tsr <> d:15 var
+R1347:1360 tsr <> External_event constr
+R1378:1382 Coq.ZArith.BinInt Z ltb def
+R1384:1384 tsr <> r:16 var
+R1443:1454 tsr <> Filtered_out constr
+R1456:1456 tsr <> d:15 var
+R1394:1403 tsr <> Manifested constr
+R1405:1405 tsr <> d:15 var
+R1462:1470 tsr <> Potential constr
+R1493:1497 Coq.ZArith.BinInt Z gtb def
+R1504:1504 tsr <> r:16 var
+R1535:1546 tsr <> Filtered_out constr
+R1548:1548 tsr <> d:15 var
+R1511:1520 tsr <> Manifested constr
+R1522:1522 tsr <> d:15 var
+prf 1601:1621 <> no_self_contradiction
+binder 1634:1634 <> b:18
+binder 1636:1636 <> e:19
+binder 1638:1638 <> d:20
+binder 1640:1640 <> s:21
+R1663:1666 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1643:1656 tsr <> execute_filter def
+R1658:1658 tsr <> b:18 var
+R1660:1660 tsr <> e:19 var
+R1662:1662 tsr <> d:20 var
+R1667:1671 tsr <> Error constr
+R1673:1673 tsr <> s:21 var
+R1710:1723 tsr <> execute_filter def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1875:1879 Coq.ZArith.BinInt Z ltb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+R1904:1908 Coq.ZArith.BinInt Z gtb def
+prf 1980:1997 <> filter_consistency
+binder 2010:2010 <> b:22
+binder 2012:2012 <> e:23
+binder 2014:2014 <> d:24
+R2017:2019 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2064:2064 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2040:2042 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2020:2033 tsr <> execute_filter def
+R2035:2035 tsr <> b:22 var
+R2037:2037 tsr <> e:23 var
+R2039:2039 tsr <> d:24 var
+R2043:2047 tsr <> Error constr
+R2098:2118 tsr <> no_self_contradiction thm
+R2098:2118 tsr <> no_self_contradiction thm
